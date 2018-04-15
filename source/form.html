@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="" height="" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><img class="main-nav__main-image" width = "" height = "" alt = "Меню"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a>Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <div class = "search__form">
+                <i class="search__img"></i>
+                <input type="search" id="search" placeholder="Поиск" />
+              </div>
+            </li>
+            <li class="site-list__item">
+              <div class="menu-element">
+                <div class="menu-element__text"><i class="menu-element__img-basket"></i>Корзина: <span>пока пуста</span></div>
+              </div>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+    <h1 class="main-title">Вязание на заказ</h1>
+
+      <section class="form">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши <br>пожелания! Заполните простую <br>форму заказа и мы свяжемся с вами, <br>чтобы уточнить детали.</p>
+        <form>
+          <fieldset>
+            <legend>Тип</legend>
+            <div>
+              <input type="checkbox" id="accessories" name="type" value="accessories">
+              <label for="accessories">Аксессуары для интерьера</label>
+            </div>
+            <div>
+              <input type="checkbox" id="kids_toys" name="type" value="kids_toys">
+              <label for="kids_toys">Детская игрушка</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <div>
+              <input type="checkbox" id="white" name="color" value="white">
+              <label for="white">Белый</label>
+            </div>
+            <div>
+              <input type="checkbox" id="gray" name="color" value="gray">
+              <label for="gray">Серый</label>
+            </div>
+            <div>
+              <input type="checkbox" id="tiffany" name="color" value="tiffany">
+              <label for="tiffany">"Тиффани"</label>
+            </div>
+            <div>
+              <input type="checkbox" id="black" name="color" value="black">
+              <label for="black">Черный</label>
+            </div>
+            <div>
+              <input type="checkbox" id="pink" name="color" value="pink">
+              <label for="pink">Розовый</label>
+            </div>
+            <div>
+              <input type="checkbox" id="orange" name="color" value="orange">
+              <label for="orange">Оранжевый</label>
+            </div>
+          </fieldset>
+
+
+          <form action="#" method="POST" name= "application ">
+            <fieldset>
+              <legend>ФИО</legend>
+            <div class="name">
+              <label for="name">Имя</label>
+              <input name="name" id="application__name" maxlength="20" placeholder="Введите ваше имя*" required />
+            </div>
+
+            <div class="surname">
+              <label for="surname">Фамилия</label>
+              <input name="surname" id="application__surname" maxlength="20" placeholder="Укажите фамилию*" required />
+            </div>
+
+            <div class="patronymic">
+              <label for="patronymic">Отчество</label>
+              <input name="patronymic" id="application_patronymic" maxlength="20" placeholder="Отчество, если желаете" required />
+            </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Тел</legend>
+            <div class="telephone">
+              <input name="telephone" type="Tel" id="application__tel" maxlength="20" placeholder="+7 ХХХ ХХ ХХ*" required/>
+            </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Email</legend>
+            <div class="email">
+              <input name="email" type="email" id="application__email" maxlength="20" placeholder="Ваш Email*" required />
+            </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Доп</legend>
+            <div>
+              <textarea name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </fieldset>
+
+           <p class="application__alarm">
+             <sup>*</sup>Поля обязательны для заполнения
+           </p>
+
+             <button class="application__button site-button" type="submit" form="application">Отправить заказ </button>
+
+          </form>
+
+        </form>
+      </section>
+
+    </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><i class="social__link__img-vk"></i></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><i class="social__link__img-fb"></i></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><i class="social__link__img-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
+      </footer>
+
+  </body>
