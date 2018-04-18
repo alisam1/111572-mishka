@@ -11,7 +11,7 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="" height="" alt="Мишка">
       </a>
       <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><img class="main-nav__main-image" width = "" height = "" alt = "Меню"></button>
+      <button class="main-nav__toggle" type="button"><img class="main-nav__main-image" width="" height="" alt="Меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -22,13 +22,13 @@
             </li>
             <li class="site-list__item">
               <div class = "search__form">
-                <i class="search__img"></i>
+                <span class="search__img"></span>
                 <input type="search" id="search" placeholder="Поиск" />
               </div>
             </li>
             <li class="site-list__item">
               <div class="menu-element">
-                <div class="menu-element__text"><i class="menu-element__img-basket"></i>Корзина: <span>пока пуста</span></div>
+                <div class="menu-element__text"><span class="menu-element__img-basket"></span>Корзина: <span>пока пуста</span></div>
               </div>
             </li>
           </ul>
@@ -42,7 +42,7 @@
     <h1 class="main-title">Вязание на заказ</h1>
 
       <section class="form">
-        <p class="form__description">Мы будем рады воплотить в жизнь ваши <br>пожелания! Заполните простую <br>форму заказа и мы свяжемся с вами, <br>чтобы уточнить детали.</p>
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form>
           <fieldset>
             <legend>Тип</legend>
@@ -58,27 +58,27 @@
 
           <fieldset>
             <legend>Цвет</legend>
-            <div>
+            <div class="field-checkbox">
               <input type="checkbox" id="white" name="color" value="white">
               <label for="white">Белый</label>
             </div>
-            <div>
+            <div class="field-checkbox">
               <input type="checkbox" id="gray" name="color" value="gray">
               <label for="gray">Серый</label>
             </div>
-            <div>
+            <div class="field-checkbox">
               <input type="checkbox" id="tiffany" name="color" value="tiffany">
               <label for="tiffany">"Тиффани"</label>
             </div>
-            <div>
+            <div class="field-checkbox">
               <input type="checkbox" id="black" name="color" value="black">
               <label for="black">Черный</label>
             </div>
-            <div>
+            <div class="field-checkbox">
               <input type="checkbox" id="pink" name="color" value="pink">
               <label for="pink">Розовый</label>
             </div>
-            <div>
+            <div class="field-checkbox">
               <input type="checkbox" id="orange" name="color" value="orange">
               <label for="orange">Оранжевый</label>
             </div>
@@ -88,17 +88,17 @@
           <form action="#" method="POST" name= "application ">
             <fieldset>
               <legend>ФИО</legend>
-            <div class="name">
+            <div class="field-text">
               <label for="name">Имя</label>
-              <input name="name" id="application__name" maxlength="20" placeholder="Введите ваше имя*" required />
+              <input name="name" id="application_name" maxlength="20" placeholder="Введите ваше имя*" required />
             </div>
 
-            <div class="surname">
+            <div class="field-text">
               <label for="surname">Фамилия</label>
-              <input name="surname" id="application__surname" maxlength="20" placeholder="Укажите фамилию*" required />
+              <input name="surname" id="application_surname" maxlength="20" placeholder="Укажите фамилию*" required />
             </div>
 
-            <div class="patronymic">
+            <div class="field-text">
               <label for="patronymic">Отчество</label>
               <input name="patronymic" id="application_patronymic" maxlength="20" placeholder="Отчество, если желаете" required />
             </div>
@@ -106,15 +106,15 @@
 
             <fieldset>
               <legend>Тел</legend>
-            <div class="telephone">
-              <input name="telephone" type="Tel" id="application__tel" maxlength="20" placeholder="+7 ХХХ ХХ ХХ*" required/>
+            <div class="field-text">
+              <input name="telephone" type="Tel" id="application_tel" maxlength="20" placeholder="+7 ХХХ ХХ ХХ*" required/>
             </div>
             </fieldset>
 
             <fieldset>
               <legend>Email</legend>
-            <div class="email">
-              <input name="email" type="email" id="application__email" maxlength="20" placeholder="Ваш Email*" required />
+            <div class="field-text">
+              <input name="email" type="email" id="application_email" maxlength="20" placeholder="Ваш Email*" required />
             </div>
             </fieldset>
 
@@ -143,13 +143,13 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><i class="social__link__img-vk"></i></a>
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="social__link__img-vk"></span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><i class="social__link__img-fb"></i></a>
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="social__link__img-fb"></span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><i class="social__link__img-instagram"></i></a>
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="social__link__img-instagram"></span></a>
               </li>
             </ul>
           </div>
