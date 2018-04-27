@@ -1,0 +1,46 @@
+@import "blocks/normalize.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/main-title.scss";
+@import "blocks/container.scss";
+@import "blocks/second-nav.scss";
+@import "blocks/card.scss";
+@import "blocks/site-button.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/catalog-main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/production.scss";
+@import "blocks/form-main.scss";
+@import "blocks/form.scss";
+@import "blocks/field-checkbox.scss";
+@import "blocks/copyright.scss";
+
+
+@font-face {
+font-family: "Open Sans";
+src:  url("../fonts/opensans.woff2") format("woff2"),
+      url("opensans.woff") format("woff");
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Open Sans";
+src:  url("../fonts/opensansbold.woff2") format("woff2"),
+      url("opensansbold.woff") format("woff");
+font-weight: 700;
+font-style: normal;
+}
+
+body {
+min-width: 320px;
+font-family: "Open Sans", sans-serif;
+font-weight: 400;
+background-color: #ffffff;
+}
