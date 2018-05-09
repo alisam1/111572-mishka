@@ -21,4 +21,19 @@
   padding: 28px 0px;
   color: #000000;
   text-decoration: none;
+
+}
+
+@media screen and (min-width: $tablet-width)
+{
+  .main-nav__list
+  {
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+
 }

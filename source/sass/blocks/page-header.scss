@@ -9,3 +9,16 @@
 {
   margin-top: 22px;
 }
+
+@media screen and (min-width: $tablet-width)
+{
+  .page-header
+  {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+
+}
