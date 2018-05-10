@@ -33,6 +33,32 @@
     padding-bottom: 28px;
     position: relative;
     top:-80px;
+  }
 
+  .second-nav-element__text
+  {
+    width: 110px;
+  }
+
+  .second-nav-element__img-lamp
+  {
+    background: url("../img/interior.svg") no-repeat;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    position: relative;
+    top: -30px;
+    left: 150px;
+  }
+
+  .second-nav-element__img-toys
+  {
+    background: url("../img/toy-svg.svg") no-repeat;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    position: relative;
+    top: -30px;
+    left: 160px;
   }
 }
