@@ -49,3 +49,60 @@ margin-top: 20px;
 margin-left: 30px;
 margin-bottom: 35px;
 }
+
+@media screen and (min-width: $tablet-width)
+{
+  .production
+  {
+    width: 668px;
+    height: 742px;
+  }
+
+
+  .production__video img
+  {
+    width: 668px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+  .production
+  {
+    width: 1020px;
+    height: 450px;
+  }
+  .production__video
+  {
+    margin-top: 0px;
+  }
+
+  .production__title
+  {
+    float: right;
+    padding-right: 30px;
+    margin-top: 70px;
+    margin-right: 50px;
+  }
+
+  .production__video img
+  {
+    width: 680px;
+    height: 450px;
+  }
+
+  .production__description
+  {
+    float: right;
+    width: 221px;
+    margin-top: -320px;
+  }
+
+  .production__button
+  {
+    float: right;
+    margin-top: -120px;
+    margin-right: 50px;
+  }
+}
