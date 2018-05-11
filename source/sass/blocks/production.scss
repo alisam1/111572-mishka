@@ -18,6 +18,16 @@
   margin-left: 30px;
   margin-right: 30px;
 
+  &::before {
+   content: "";
+   position: absolute;
+   top: 29px;
+   left: 33px;
+   width: 40px;
+   height: 30px;
+   background: url("../img/icon-video.svg") no-repeat;
+ }
+
 }
 
 .production__description
@@ -56,6 +66,26 @@ margin-bottom: 35px;
   {
     width: 668px;
     height: 742px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .production__video
+  {
+    order: 3;
+  }
+
+  .production__title
+  {
+    order: 2;
+    position: relative;
+    top:20px;
+    padding-left: 60px;
+    width: 300px;
+    &::before {
+      top: -7px;
+      left: 0px;
+    }
   }
 
 
@@ -63,6 +93,20 @@ margin-bottom: 35px;
   {
     width: 668px;
     height: 450px;
+    top: 45px;
+    position: relative;
+  }
+
+  .production__description
+  {
+    order: 1;
+  }
+
+  .production__button
+  {
+    width: 580px;
+    height: 50px;
+    margin-left: 45px;
   }
 }
 
@@ -72,37 +116,52 @@ margin-bottom: 35px;
   {
     width: 1020px;
     height: 450px;
-  }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
   .production__video
   {
     margin-top: 0px;
-  }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    order: -1;
+}
 
   .production__title
   {
     float: right;
     padding-right: 30px;
-    margin-top: 70px;
-    margin-right: 50px;
+    order: 1;
+    padding-top: 6px;
+
+    &::before {
+      top: 0px;
+      left: 0px;
+    }
   }
 
   .production__video img
   {
     width: 680px;
     height: 450px;
+    margin-top: -45px;
+    margin-left: -5px;
   }
 
   .production__description
   {
     float: right;
     width: 221px;
-    margin-top: -320px;
+    order: 1;
   }
 
   .production__button
   {
+    width: 225px;
     float: right;
-    margin-top: -120px;
-    margin-right: 50px;
+    order: 1;
   }
 }
