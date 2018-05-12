@@ -17,12 +17,11 @@ legend
    content: "";
    position: absolute;
    margin-top: 10px;
-   left: 400px;
+   left: 450px;
    width: 200px;
    height: 2px;
    background: url("../img/layer_form.svg") no-repeat;
    margin-bottom: 20px;
-   margin-left: -300px;
  }
 }
 
@@ -99,9 +98,343 @@ legend
 
 @media screen and (min-width: $tablet-width)
 {
+  .form
+  {
+    width: 668px;
+  }
+
+  .form__description
+  {
+    width: 610px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  .radio-wrap
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+  }
+
+  .form__legend
+  {
+     width: 165px;
+     position: relative;
+     top: 50px;
+     font-size: 17px;
+     line-height: 30px;
+     font-weight: bold;
+     color: #63d1bb;
+     padding-left: 50px;
+     &::before {
+      display: none;
+    }
+  }
+
+  .checkbox-main
+  {
+    height: 300px;
+    background-color: #f1f1f1;
+  }
+
+  .checkbox-wrap
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 200px;
+  }
+
+  .checkbox-wrap label
+  {
+    width: 220px;
+
+  }
+
+  .name-wrap
+  {
+
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+  }
+
+  .form__label
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__text-input
+  {
+    width: 420px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    &--surname
+    {
+      width: 375px;
+    }
+
+    &--patronymic
+    {
+      width: 375px;
+    }
+    &--telephone
+    {
+      background: #f1f1f1;
+    }
+    &--email
+    {
+      background: #f1f1f1;
+    }
+}
+
+.contact-group
+{
+  width: 668px;
+  background-color: #f1f1f1;
+}
+
+.tel-wrap
+{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+}
+
+.email-wrap
+{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+}
+
+.form__text-input--telephone
+{
+  background: #f1f1f1;
+}
+
+.form__text-input--email
+{
+  background: #f1f1f1;
+}
+
+.text-wrap
+{
+
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+}
+
+
+.button-wrap
+{
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+}
+
+.form__button
+{
+  float: left;
+}
+
+.form__alarm
+{
+  width: 430px;
+  margin-left: 120px;
+  padding-top: 20px;
+}
+
+
 }
 
 @media screen and (min-width: $desktop-width)
 {
+  .form
+  {
+    width: 1050px;
+  }
 
+  .form__description
+  {
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+    margin-left: 165px;
+}
+
+  .radio-wrap
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+  }
+
+  .form__legend
+  {
+     width: 175px;
+     position: relative;
+     top: 50px;
+     font-size: 17px;
+     line-height: 30px;
+     font-weight: bold;
+     color: #63d1bb;
+     padding-left: 65px;
+     &::before {
+      display: none;
+    }
+    &--color
+    {
+      top:70px;
+    }
+  }
+
+  .checkbox-main
+  {
+    height: 300px;
+    background-color: #f1f1f1;
+  }
+
+  .checkbox-wrap
+  {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 165px;
+    flex-wrap:wrap;
+    width:875px;
+    align-items: center;
+  }
+
+  .checkbox-wrap label
+  {
+    width: 30%
+  }
+
+  .name-wrap
+  {
+
+    width: 875px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+  }
+
+  .form__label
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__text-input
+  {
+    width: 625px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    &--surname
+    {
+      width: 570px;
+    }
+
+    &--patronymic
+    {
+      width: 575px;
+    }
+    &--telephone
+    {
+      background: #f1f1f1;
+    }
+    &--email
+    {
+      background: #f1f1f1;
+    }
+}
+
+.contact-group
+{
+  width: 1050px;
+  background-color: #f1f1f1;
+}
+
+.tel-wrap
+{
+  width: 875px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+}
+
+.email-wrap
+{
+  width: 875px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+}
+
+.form__text-input--telephone
+{
+  width: 700px;
+  background: #f1f1f1;
+}
+
+.form__text-input--email
+{
+  width: 700px;
+  background: #f1f1f1;
+}
+
+.text-wrap
+{
+
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+}
+
+
+.button-wrap
+{
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+}
+
+.form__button
+{
+  float: left;
+  margin-left: 165px;
+}
+
+.form__alarm
+{
+  width: 430px;
+  margin-left: 120px;
+  padding-top: 20px;
+}
 }
