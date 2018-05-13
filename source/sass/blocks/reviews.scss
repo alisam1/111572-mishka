@@ -2,6 +2,17 @@
 {
   margin-top: 70px;
   margin-bottom: 40px;
+  margin-left: 30px;
+
+  &::after
+  {
+    content: "";
+    display: block;
+    height: 70px;
+    background-image: url('/img/zigzag-line-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 }
 
 .reviews__title
@@ -40,6 +51,28 @@
   line-height: 30px;
   color: #464646;
   font-style: normal;
+}
+
+.reviews__arrow
+{
+  width: 270px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #ececec;
+}
+
+.reviews__prev
+{
+  border: none;
+  background: transparent;
+  margin-left: 30px;
+}
+
+.reviews__next
+{
+  border: none;
+  background: transparent;
+  margin-left: 80px;
 }
 
 @media screen and (min-width: $tablet-width)
@@ -127,8 +160,18 @@
 {
   .reviews
   {
+    width: 1050px;
     margin-left: 0;
     margin-top: 10px;
+    &::after
+    {
+      content: "";
+      display: block;
+      height: 70px;
+      background-image: url('/img/zigzag-line-desktop.jpg');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
   }
 
   .reviews__title
@@ -155,7 +198,7 @@
   .reviews__arrow
   {
     position: relative;
-    left: 110px;
+    left: -110px;
   }
 
   .reviews__write

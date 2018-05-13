@@ -5,6 +5,7 @@
   color: #000;
   margin-top: 40px;
   margin-bottom: 35px;
+  margin-left: 30px;
 }
 
 .advantages__list
@@ -16,6 +17,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  margin-left: 30px;
 }
 
 .advantages__item
@@ -26,7 +28,7 @@
 {
   content: "";
   position: absolute;
-  margin-top: -30px;
+  margin-top: -50px;
   width: 32px;
   height: 37px;
   background: url("../img/icon-feature-flower_colored.svg") no-repeat;
@@ -36,7 +38,7 @@
 {
   content: "";
   position: absolute;
-  margin-top: -30px;
+  margin-top: -40px;
   width: 48px;
   height: 37px;
   background: url("../img/icon-feature-money_colored.svg") no-repeat;
@@ -45,7 +47,7 @@
 {
   content: "";
   position: absolute;
-  margin-top: -30px;
+  margin-top: -40px;
   width: 34px;
   height: 37px;
   background: url("../img/icon-feature-heart_colored.svg") no-repeat;
@@ -54,7 +56,7 @@
 {
   content: "";
   position: absolute;
-  margin-top: -30px;
+  margin-top: -50px;
   width: 38px;
   height: 37px;
   background: url("../img/icon-feature-ball_colored.svg") no-repeat;
@@ -64,7 +66,7 @@
 {
   content: "";
   position: absolute;
-  margin-top: -30px;
+  margin-top: -40px;
   width: 55px;
   height: 37px;
   background: url("../img/icon-feature-rocket_colored.svg") no-repeat;
@@ -73,7 +75,7 @@
 {
   content: "";
   position: absolute;
-  margin-top: -30px;
+  margin-top: -40px;
   width: 35px;
   height: 37px;
   background: url("../img/icon-feature-gift_colored.svg") no-repeat;

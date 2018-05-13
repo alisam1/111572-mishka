@@ -13,13 +13,61 @@
   }
 }
 
+.second-nav__list
+{
+   display: flex;
+   flex-direction: column;
+   margin-top: 110px;
+}
+
+.second-nav__list-item
+{
+  width: 320px;
+  font-size: 19px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 28px;
+  position: relative;
+  top:-80px;
+}
+
+.second-nav-element__text
+{
+  width: 110px;
+  padding-left: 30px;
+}
+
+.second-nav-element__img-lamp
+{
+  background: url("../img/interior.svg") no-repeat;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  position: relative;
+  top: -30px;
+  left: 110px;
+}
+
+.second-nav-element__img-toys
+{
+  background: url("../img/toy-svg.svg") no-repeat;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  position: relative;
+  top: -30px;
+  left: 120px;
+}
+
 @media screen and (min-width: $tablet-width)
 {
   .second-nav__list
   {
      display: flex;
      flex-direction: row;
-     margin-top: 55px;
+     margin-top: 50px;
   }
 
   .second-nav__list-item
@@ -73,7 +121,7 @@
 
   .second-nav__list-item
   {
-    width: 490px;
+    width: 540px;
     font-size: 20px;
     line-height: 30px;
     color: #fff;
@@ -82,7 +130,6 @@
     padding-top: 35px;
     padding-bottom: 28px;
     position: relative;
-    top:-33px;
   }
 
   .second-nav-element__text
