@@ -18,6 +18,19 @@
   margin-left: 30px;
   margin-right: 30px;
 
+<<<<<<< HEAD
+=======
+  &::before {
+   content: "";
+   position: absolute;
+   top: 29px;
+   left: 33px;
+   width: 40px;
+   height: 30px;
+   background: url("../img/icon-video.svg") no-repeat;
+ }
+
+>>>>>>> module4-task1
 }
 
 .production__description
@@ -49,3 +62,152 @@ margin-top: 20px;
 margin-left: 30px;
 margin-bottom: 35px;
 }
+<<<<<<< HEAD
+=======
+
+@media screen and (min-width: $tablet-width)
+{
+  .production
+  {
+    width: 668px;
+    height: 742px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .production__video
+  {
+    order: 3;
+  }
+
+  .production__title
+  {
+    order: 2;
+    position: relative;
+    top:20px;
+    padding-left: 60px;
+    width: 300px;
+    &::before {
+      top: -7px;
+      left: 0px;
+    }
+  }
+
+
+  .production__video img
+  {
+    width: 668px;
+    height: 450px;
+    top: 15px;
+    position: relative;
+  }
+
+  .production__video a {
+   position: absolute;
+   display: block;
+   background: url('/img/VSO.svg');
+   height: 75px;
+   width: 100px;
+   top: 1820px;
+   left: 470px;
+}
+
+.production__video a:hover {
+ position: absolute;
+ display: block;
+ background: url('/img/play_hover.svg')no-repeat;
+ height: 90px;
+ width: 120px;
+ top: 1820px;
+ left: 470px;
+}
+
+.production__video a:active {
+ position: absolute;
+ display: block;
+ background: url('/img/play_active.svg') no-repeat;
+ height: 90px;
+ width: 120px;
+ top: 1820px;
+ left: 470px;
+}
+
+  .production__description
+  {
+    order: 1;
+  }
+
+  .production__button
+  {
+    width: 580px;
+    height: 50px;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+  .production
+  {
+    width: 1020px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+  .production__video
+  {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    order: -1;
+}
+
+  .production__title
+  {
+    float: right;
+    padding-right: 30px;
+    order: 1;
+    padding-top: 6px;
+
+    &::before {
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  .production__video img
+  {
+    width: 680px;
+    height: 450px;
+    margin-top: -15px;
+    margin-left: -5px;
+  }
+
+  .production__video a {
+   position: absolute;
+   display: block;
+   background: url('/img/VSO.svg');
+   height: 75px;
+   width: 100px;
+   top: 1400px;
+   left: 520px;
+}
+
+  .production__description
+  {
+    float: right;
+    width: 221px;
+    order: 1;
+  }
+
+  .production__button
+  {
+    width: 225px;
+    float: right;
+    order: 1;
+  }
+}
+>>>>>>> module4-task1

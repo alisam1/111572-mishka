@@ -2,3 +2,21 @@
 {
   background-color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+
+@media screen and (min-width: $tablet-width)
+{
+  .catalog
+  {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+
+}
+>>>>>>> module4-task1

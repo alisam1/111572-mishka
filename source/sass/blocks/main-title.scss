@@ -7,3 +7,38 @@
   font-size: 27px;
   line-height: 30px;
 }
+<<<<<<< HEAD
+=======
+
+
+@media screen and (min-width: $tablet-width)
+{
+  .main-title
+  {
+    width: 490px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 170px;
+    margin-bottom: 380px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+
+  .main-title
+  {
+    width: 700px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 145px;
+    margin-bottom: 380px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+  }
+
+}
+>>>>>>> module4-task1

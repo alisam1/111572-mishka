@@ -22,8 +22,18 @@
   margin-bottom: 40px;
 }
 
+<<<<<<< HEAD
 .contacts__field
 {
+=======
+.contacts__row {
+  display: table-row;
+}
+
+.contacts__field
+{
+  display: table-cell;
+>>>>>>> module4-task1
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -56,9 +66,25 @@
 
 .contacts__value--adress
 {
+<<<<<<< HEAD
   padding-top: 60px;
 }
 
+=======
+  list-style: none;
+}
+
+.contacts__value--email
+{
+  list-style: none;
+}
+
+.contacts__map iframe
+{
+  width: 320px;
+  height: 150px;
+}
+>>>>>>> module4-task1
 .contacts__button
 {
   margin-left: 30px;
@@ -66,3 +92,137 @@
   padding-right: 52px;
   margin-bottom: 40px;
 }
+<<<<<<< HEAD
+=======
+
+@media screen and (min-width: $tablet-width)
+{
+
+  .contacts
+  {
+    min-width: 768px;
+  }
+
+  .contacts__title {
+    width: 668px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 70px;
+    position: relative;
+    margin-left: 0px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat;
+      top: 75px;
+      left: 700px;
+    }
+  }
+
+  .contacts__row
+  {
+    display: flex;
+  }
+
+  .contacts__list
+  {
+    display: flex;
+    width: 760px;
+    margin-left: -30px;
+  }
+
+  .contacts__value--adress
+  {
+    list-style: none;
+    width: 370px;
+  }
+
+  .contacts__map iframe
+  {
+    width: 768px;
+    height: 460px;
+  }
+
+  .contacts__button
+  {
+    margin-left: 270px;
+  }
+
+
+}
+
+@media screen and (min-width: $desktop-width)
+{
+  .contacts
+  {
+    padding-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin-top: -60px;
+  }
+
+  .contacts__title {
+    width: 668px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 70px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat;
+      top: 80px;
+      left: -100px;
+    }
+  }
+
+  .contacts__value--adress
+  {
+    list-style: none;
+    width: 370px;
+  }
+
+  .contacts__list
+  {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+  }
+
+  .contacts__map
+  {
+    width: 525px;
+    position: relative;
+    left: 50%;
+    top: -380px;
+  }
+
+  .contacts__map iframe
+  {
+    width: 525px;
+    height: 460px;
+    order: 2;
+  }
+
+  .contacts__button
+  {
+    width: 230px;
+    position: relative;
+    margin-left: 0px;
+    top: -460px;
+    padding-left: 22px;
+    padding-right: 20px;
+    height: 47px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+>>>>>>> module4-task1
