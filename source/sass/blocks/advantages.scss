@@ -135,6 +135,7 @@
     padding-top: 56px;
     padding-bottom: 62px;
     margin-left: 180px;
+    margin-top: -150px;
   }
 
   .advantages__title
@@ -143,5 +144,14 @@
     font-weight: bold;
     line-height: 57px;
     color: #000;
+    position: relative;
+    left: -35px;
+  }
+
+  .advantages__list
+  {
+    position: relative;
+    left: -30px;
+    margin-top: -30px;
   }
 }
