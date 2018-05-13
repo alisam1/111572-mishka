@@ -2,6 +2,17 @@
 {
   margin-top: 70px;
   margin-bottom: 40px;
+  margin-left: 30px;
+
+  &::after
+  {
+    content: "";
+    display: block;
+    height: 70px;
+    background-image: url('/img/zigzag-line-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 }
 
 .reviews__title
@@ -40,4 +51,164 @@
   line-height: 30px;
   color: #464646;
   font-style: normal;
+}
+
+.reviews__arrow
+{
+  width: 270px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #ececec;
+}
+
+.reviews__prev
+{
+  border: none;
+  background: transparent;
+  margin-left: 30px;
+}
+
+.reviews__next
+{
+  border: none;
+  background: transparent;
+  margin-left: 80px;
+}
+
+@media screen and (min-width: $tablet-width)
+{
+  .reviews
+  {
+    min-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 123px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: url("../img/review@1x.jpg") no-repeat 0 0;
+  }
+
+  .reviews__title
+  {
+    font-size: 50px;
+    line-height: 43px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .reviews__text
+  {
+    font-size: 17px;
+    line-height: 30px;
+    color: #464646;
+    margin-bottom: 70px;
+  }
+
+  .reviews__write
+  {
+    position: relative;
+    top: -340px;
+    margin-left: 490px;
+  }
+
+  .reviews__author
+  {
+    width: 254px;
+    height: 40px;
+  }
+
+  .reviews__author-name
+  {
+    width: 254px;
+    margin-bottom: 17px;
+  }
+
+  .reviews__author-email
+  {
+    width: 254px;
+    margin-bottom: 17px;
+  }
+
+  .reviews__arrow
+  {
+    float: right;
+    margin-top: -40px;
+  }
+
+  .reviews__prev
+  {
+    border: none;
+    background: transparent;
+  }
+
+  .reviews__prev:hover
+  {
+    background-color: #666666;
+  }
+
+
+  .reviews__next
+  {
+    border: none;
+    background: transparent;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+  .reviews
+  {
+    width: 1050px;
+    margin-left: 0;
+    margin-top: 10px;
+    &::after
+    {
+      content: "";
+      display: block;
+      height: 70px;
+      background-image: url('/img/zigzag-line-desktop.jpg');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+  }
+
+  .reviews__title
+  {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 700;
+    color: #000;
+    padding-left: 65px;
+  }
+
+  .reviews__text
+  {
+    width: 765px;
+    padding-left: 65px;
+    margin-bottom: 40px
+  }
+
+  .reviews__author
+  {
+    padding-left: 65px;
+  }
+
+  .reviews__arrow
+  {
+    position: relative;
+    left: -110px;
+  }
+
+  .reviews__write
+  {
+    width: 175px;
+    height: 50px;
+    padding-left: 43px;
+    padding-right: 40px;
+    position: relative;
+    left: 270px;
+    margin-top: 50px;
+  }
 }
