@@ -7,79 +7,58 @@
   </head>
   <body>
 
-    <header class="page-header page-header--index">
-  <div class="page-header__logo-container">
-    <picture>
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-    </picture>
-    <button class="page-header__button" type="button"> Открыть меню </button>
-  </div>
-  <ul class="site-list site-list--index">
-    <li class="site-list__item">
-      <div class="site-list__container">
-        <a href="catalog.html" class="site-list__link">
-          Каталог товаров
-        </a>
-      </div>
-    </li>
-    <li class="site-list__item">
-      <div class="site-list__container">
-        <a href="form.html" class="site-list__link">
-          Вязание на заказ
-        </a>
-      </div>
-    </li>
-    <li class="site-list__item site-list__item--new">
-      <div class="site-list__container">
-      <a href="#" class="site-list__link">
-          Новые поступления
-      </a>
-      </div>
-    </li>
-    <li class="site-list__item site-list__item--sale">
-      <div class="site-list__container">
-      <a href="#" class="site-list__link">
-          Распродажа
-      </a>
-      </div>
-    </li>
-    <li class="site-list__item site-list__item--delivery">
-      <div class="site-list__container">
-        <span>
+    <header class="page-header">
+      <nav class="page-header__menu menu">
+          <a class="page-header__logo logo" href="index.html">
+            <img class="logo__image" src="img/logo-mobile.svg" alt="Логотоп Мишка">
+          </a>
+      <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--border" href="catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
+        <ul class="menu__interactive">
+          <li class="menu__item">
+            <a class="menu__link menu__link--search" href="#search">
+              <span class="menu__search-legend">
+                Поиск по сайту
+              </span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--cart" href="#cart">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+        <button class="page-header__button humburger" type="button" name="hamburger">
+        </button>
+        <ul class="menu__offer">
+          <li class="menu__item">
+            <a class="menu__link" href="#new">
+              Новые поступления
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sale">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <p class="menu__delivery">
           Бесплатная доставка по России
-        </span>
-      </div>
-    </li>
-  </ul>
-  <ul class="user-list user-list--index">
-    <li class="user-list__item">
-      <div class="user-list__container">
-      <a href="#" class="user-list__link user-list__link--search">
-        <svg class="user-list__search-icon" width="17.6" height="17.6"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
-        <span> Поиск по сайту </span>
-      </a>
-      </div>
-    </li>
-    <li class="user-list__item">
-      <div class="user-list__container">
-      <a href="#" class="user-list__link user-list__link--cart">
-        <svg class="user-list__cart-icon" width="20.294px" height="18.849px"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
-        Корзина: пока пуста
-      </a>
-      </div>
-    </li>
-    <li class="user-list__item user-list__item--delivery">
-      <div class="user-list__container">
-            <span class="delivery-text">
-              Бесплатная доставка по России
-            </span>
-      </div>
-    </li>
-  </ul>
-</header>
+        </p>
+      </nav>
+    </header>
 
-
-    <main class="page-main container">
+    <main class="page-main">
 
       <h1 class="main-title">Милые штуки ручной работы для дома</h1>
 
@@ -133,9 +112,7 @@
         </table>
         </div>
         <p class="card__img">
-
           <img class="card__img__main-image" src="img/triple-set-mobile@1x.jpg" width="" height="315" alt="Изображение товара">
-
         </p>
         <p class="card__price">Цена: 990 руб.</p>
         <button class="card__button site-button">Заказать</button>
@@ -180,7 +157,6 @@
                 <cite class="reviews__author-name">Анастасия Красильникова</cite>
                 <cite class="reviews__author-email">@misssssiskras</cite>
               </div>
-
         </blockquote>
         <p class="reviews__arrow">
         <button class="reviews__prev" type="button"><img src="img/icon-left-arrow.svg" alt="Предыдущий отзыв" class="left_arrow"></button>
