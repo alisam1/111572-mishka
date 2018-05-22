@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .field-checkbox--choice
 {
   font-size: 17px;
@@ -20,3 +21,151 @@
 {
   padding-left: 25px;
 }
+||||||| merged common ancestors
+=======
+
+
+.field-checkbox--choice input {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #444444;
+  left: 0;
+  top: -9px;
+}
+
+.field-checkbox--choice:checked + input::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  top: 3px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+
+.field-checkbox
+{
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.field-checkbox label
+{
+  padding-left: 25px;
+}
+
+.label
+{
+  width: 200px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+}
+.checkbox,
+.radio {
+	display: none;
+}
+.checkbox-custom,
+.radio-custom {
+	width: 40px;
+	height: 40px;
+	border: 2px solid #444444;
+	border-radius: 3px;
+	position: relative;
+  margin-bottom: 20px;
+}
+.checkbox-custom,
+.radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+.checkbox:checked + .checkbox-custom::before,
+.radio:checked + .radio-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	background: #62d1ba;
+	border-radius: 2px;
+}
+.radio-custom,
+.radio:checked + .radio-custom::before {
+	border-radius: 50%;
+}
+
+.field-checkbox__label
+{
+  width: 200px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+}
+
+.field-checkbox {
+	display: none;
+}
+
+.field-checkbox__custom {
+	position: relative;
+	width: 37px;
+	height: 37px;
+	border: 2px solid #000;
+	border-radius: 1px;
+  margin-bottom: 20px;
+}
+
+.field-checkbox__custom,
+.field-checkbox__label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.field-checkbox:checked + .field-checkbox__custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+
+	top: 10px;
+	right: 9px;
+	bottom: 10px;
+	left: 6px;
+	background: url('/img/tick-mobile.svg') no-repeat 0 0;
+	border-radius: 2px;
+}
+
+@media screen and (min-width: $tablet-width)
+{
+  .field-checkbox__label
+  {
+    width: 100px;
+  }
+
+  .label
+  {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+
+}
+>>>>>>> module4-task1

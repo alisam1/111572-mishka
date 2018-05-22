@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form__group {
   padding: 0;
   border: none;
@@ -56,3 +57,483 @@
   font-size: 14px;
   line-height: 16px;
 }
+||||||| merged common ancestors
+=======
+.form__group {
+  padding: 0;
+  border: none;
+}
+
+fieldset
+{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+legend
+{
+   margin-bottom: 20px;
+  &::before {
+   content: "";
+   position: absolute;
+   margin-top: 10px;
+   left: 450px;
+   width: 200px;
+   height: 2px;
+   background: url("../img/layer_form.svg") no-repeat;
+   margin-bottom: 20px;
+ }
+}
+
+.form__legend {
+  margin-bottom: 27px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.form__label-text {
+  display: block;
+  min-height: 40px;
+  margin-bottom: 22px;
+  padding-left: 62px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__text-input {
+  width: 260px;
+  height: 53px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.form__user-message  {
+  margin-bottom: 17px;
+  font-family: inherit;
+  height: 142px;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid #000000;
+  color: #dfdfdf;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 15px;
+}
+
+.form__note {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #444444;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__button
+{
+  width: 260px;
+  height: 50px;
+  font-size: 17px;
+  line-height: 18px;
+  padding-left: 37px;
+  padding-right: 37px;
+  margin-bottom: 55px;
+}
+
+
+@media screen and (min-width: $tablet-width)
+{
+  .form
+  {
+    width: 668px;
+  }
+
+  .form__description
+  {
+    width: 610px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  .radio-wrap
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+    width: 500px;
+  }
+
+  .form__legend
+  {
+     width: 165px;
+     position: relative;
+     top: 50px;
+     font-size: 17px;
+     line-height: 30px;
+     font-weight: bold;
+     color: #63d1bb;
+     padding-left: 50px;
+     &::before {
+      display: none;
+    }
+  }
+
+  .checkbox-main
+  {
+    height: 300px;
+    background-color: #f1f1f1;
+  }
+
+  .checkbox-wrap
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 200px;
+  }
+
+  .checkbox-wrap label
+  {
+    width: 220px;
+
+  }
+
+  .name-wrap
+  {
+
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+  }
+
+  .form__label
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__text-input
+  {
+    width: 420px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    &--surname
+    {
+      width: 375px;
+    }
+
+    &--patronymic
+    {
+      width: 375px;
+    }
+    &--telephone
+    {
+      background: #f1f1f1;
+    }
+    &--email
+    {
+      background: #f1f1f1;
+    }
+}
+
+.contact-group
+{
+  width: 668px;
+  background-color: #f1f1f1;
+}
+
+.tel-wrap
+{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    width: 40px;
+    height: 30px;
+    background: url("../img/phone.svg") no-repeat;
+  }
+}
+
+.email-wrap
+{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    width: 40px;
+    height: 30px;
+    background: url("../img/mail.svg") no-repeat;
+  }
+}
+
+.form__text-input--telephone
+{
+  background: #f1f1f1;
+}
+
+.form__text-input--email
+{
+  background: #f1f1f1;
+}
+
+.text-wrap
+{
+
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+}
+
+
+.button-wrap
+{
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+}
+
+.form__button
+{
+  float: left;
+}
+
+.form__alarm
+{
+  width: 430px;
+  margin-left: 120px;
+  padding-top: 20px;
+}
+
+
+}
+
+@media screen and (min-width: $desktop-width)
+{
+  .form
+  {
+    width: 1050px;
+  }
+
+  .form__description
+  {
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+    margin-left: 165px;
+}
+
+  .radio-wrap
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+  }
+
+  .form__legend
+  {
+     width: 175px;
+     position: relative;
+     top: 50px;
+     font-size: 17px;
+     line-height: 30px;
+     font-weight: bold;
+     color: #63d1bb;
+     padding-left: 65px;
+     &::before {
+      display: none;
+    }
+    &--color
+    {
+      top:70px;
+    }
+  }
+
+  .checkbox-main
+  {
+    height: 300px;
+    background-color: #f1f1f1;
+  }
+
+  .checkbox-wrap
+  {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 165px;
+    flex-wrap:wrap;
+    width:875px;
+    align-items: center;
+  }
+
+  .checkbox-wrap label
+  {
+    width: 30%
+  }
+
+  .name-wrap
+  {
+
+    width: 875px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+  }
+
+  .form__label
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__text-input
+  {
+    width: 625px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    &--surname
+    {
+      width: 570px;
+    }
+
+    &--patronymic
+    {
+      width: 575px;
+    }
+    &--telephone
+    {
+      background: #f1f1f1;
+    }
+    &--email
+    {
+      background: #f1f1f1;
+    }
+}
+
+.contact-group
+{
+  width: 1050px;
+  background-color: #f1f1f1;
+}
+
+.tel-wrap
+{
+  width: 875px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 680px;
+    width: 40px;
+    height: 30px;
+    background: url("../img/phone.svg") no-repeat;
+}
+}
+
+.email-wrap
+{
+  width: 875px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 680px;
+    width: 40px;
+    height: 30px;
+    background: url("../img/mail.svg") no-repeat;
+}
+}
+
+.form__text-input--telephone
+{
+  width: 700px;
+  background: #f1f1f1;
+}
+
+.form__text-input--email
+{
+  width: 700px;
+  background: #f1f1f1;
+}
+
+.text-wrap
+{
+
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 165px;
+}
+
+
+.button-wrap
+{
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+}
+
+.form__button
+{
+  float: left;
+  margin-left: 165px;
+}
+
+.form__alarm
+{
+  width: 430px;
+  margin-left: 120px;
+  padding-top: 20px;
+}
+}
+>>>>>>> module4-task1

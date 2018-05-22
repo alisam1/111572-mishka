@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .page-footer
 {
   display:flex;
@@ -11,3 +12,107 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+||||||| merged common ancestors
+=======
+.page-footer {
+  font-family: "Open Sans", "Arial", sans-serif;
+  width: 100%;
+  background-color: #e7e7e7;
+  display: flex;
+}
+
+.page-footer__wrapper {
+  background-color: #e7e7e7;
+  width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__social-list {
+  margin-top: 25px;
+}
+
+.page-footer__developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  min-height: 79px;
+  border-top: 1px solid #e7e7e7;
+  margin-top: 23px;
+}
+
+.page-footer__developer-link {
+  margin-top: 5px;
+  margin-right: 39px;
+}
+
+.page-footer__develope {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-left: 37px;
+  margin-top: 0;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  list-style: none;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 668px;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 145px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin-right: 90px;
+  }
+
+  .page-footer__developer {
+    border: none;
+    margin-top: 0;
+    width: 184px;
+    min-height: 30px;
+  }
+
+  .page-footer__developer-link {
+    margin-right: 0;
+    margin-top: 8px;
+  }
+
+  .page-footer__develope {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .page-footer__social-list {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
+}
+>>>>>>> module4-task1

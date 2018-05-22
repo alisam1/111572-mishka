@@ -36,35 +36,60 @@
       </nav>
     </header>
 
-    <main class="catalog-main container">
+    <main class="catalog-main">
 
       <h1 class="catalog-main__title">Каталог товаров</h1>
 
       <section class="catalog">
         <div class="catalog-item">
-          <div class="catalog-item__image"><img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="zaichik-poprigaichik"></div>
+          <div class="catalog-item__image">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.svg">
+            <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt = "laundry_basket">
+           </picture>
+          </div>
           <h4 class="catalog-item__title">Зайчик попрыгайчик</h4>
           <div class="catalog-item__description">Рост 30 см, вес 200 г</div>
           <div class="catalog-item__price">1 200 руб.<span class="menu-element__icon-basket"></span></div>
         </div>
         <div class="catalog-item">
-          <div class="catalog-item__image"><img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt = "laundry_basket"></div>
+          <div class="catalog-item__image">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.svg">
+            <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt = "laundry_basket">
+           </picture>
+          </div>
           <h4 class="catalog-item__title">Корзинка для белья</h4>
           <div class="catalog-item__description">Диаметр 15 см, высота 10 см</div>
           <div class="catalog-item__price">690 руб.<span class="menu-element__icon-basket"></span></div>
         </div>
         <div class="catalog-item">
-          <div class="catalog-item__image"><img  src="img/photo-toys-mobile@1x.jpg" width="260" height="195"  alt = "basket_toys"></div>
+          <div class="catalog-item__image">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.svg">
+            <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt = "laundry_basket">
+            </picture>
+           </div>
           <h4 class="catalog-item__title">Большая корзинка для игрушек</h4>
-          <div class="catalog-item__description">Диаметр 30 см, высота 30 см</div>
-          <div class="catalog-item__price">1 500 руб.<span class="menu-element__icon-basket"><a href = "modal"></a></span></div>
+          <div class="catalog-item__description catalog-item__description--basket">Диаметр 30 см, высота 30 см</div>
+          <div class="catalog-item__price">1 500 руб.<span class="menu-element__icon-basket"></span></div>
         </div>
       </section>
 
       <section class="production">
 
           <h4 class="production__title"><span class="production-element__img-video"></span>Процесс производства</h4>
-          <p class="production__video"><img  src="img/video-mobile@1x.jpg" width="260" height="150" alt = "video"></p>
+          <p class="production__video">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.svg">
+            <img  src="img/video-mobile@1x.jpg" width="260" height="150" alt = "video">
+            </picture>
+            <a href="#"></a>
+          </p>
           <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <button class="production__button site-button">Сделать заказ</button>
 
@@ -72,27 +97,36 @@
 
     </main>
 
-    <footer class="page-footer container">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="social__link__img-vk"></span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="social__link__img-fb"></span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="social__link__img-instagram"></span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </div>
-    </footer>
+  <footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <img class="page-footer__logo" src="img/logo-mobile.svg" alt="Логотоп Мишка">
+    <ul class="page-footer__social-list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.instagram.com">
+          <img class="social-list__image social-list__image--instagram" src="img/icon-insta.svg" alt="Инстаграм">
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.facebook.com">
+          <img class="social-list__image social-list__image--facebook" src="img/icon-fb.svg" alt="Фейсбук">
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://twitter.com/">
+          <img class="social-list__image social-list__image--twitter" src="img/icon-twitter.svg" alt="Твиттер">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__developer">
+      <p class="page-footer__develope">
+        Разработано
+      </p>
+      <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/logo-htmlacademy.svg" alt="HTML-academy">
+      </a>
+    </div>
+  </div>
+</footer>
 
   </body>
   </html>

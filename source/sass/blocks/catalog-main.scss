@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .catalog-main
 {
   display:flex;
@@ -23,3 +24,49 @@
   padding-left: 42px;
   padding-right: 42px;
 }
+||||||| merged common ancestors
+=======
+.catalog-main
+{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.catalog-main__title {
+  width: 100%;
+  margin: 0;
+  margin-top: 75px;
+  margin-bottom: 72px;
+  display: inline-block;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+
+@media screen and (min-width: $tablet-width)
+{
+  .catalog-main
+  {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+
+}
+>>>>>>> module4-task1

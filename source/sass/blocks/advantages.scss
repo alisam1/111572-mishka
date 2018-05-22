@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .advantages__title
 {
   font-size: 25px;
@@ -22,3 +23,165 @@
 {
   margin-top: 82px;
 }
+||||||| merged common ancestors
+=======
+.advantages__title
+{
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  margin-left: 30px;
+}
+
+.advantages__list
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000000;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.advantages__item
+{
+  margin-top: 82px;
+
+&--material::before
+{
+  content: "";
+  position: absolute;
+  margin-top: -50px;
+  width: 32px;
+  height: 37px;
+  background: url("../img/icon-feature-flower_colored.svg") no-repeat;
+  fill: #ff7700;
+}
+&--price::before
+{
+  content: "";
+  position: absolute;
+  margin-top: -40px;
+  width: 48px;
+  height: 37px;
+  background: url("../img/icon-feature-money_colored.svg") no-repeat;
+}
+&--photos::before
+{
+  content: "";
+  position: absolute;
+  margin-top: -40px;
+  width: 34px;
+  height: 37px;
+  background: url("../img/icon-feature-heart_colored.svg") no-repeat;
+}
+&--loves::before
+{
+  content: "";
+  position: absolute;
+  margin-top: -50px;
+  width: 38px;
+  height: 37px;
+  background: url("../img/icon-feature-ball_colored.svg") no-repeat;
+  fill: #63d1bb;
+}
+&--support::before
+{
+  content: "";
+  position: absolute;
+  margin-top: -40px;
+  width: 55px;
+  height: 37px;
+  background: url("../img/icon-feature-rocket_colored.svg") no-repeat;
+}
+&--gifts::before
+{
+  content: "";
+  position: absolute;
+  margin-top: -40px;
+  width: 35px;
+  height: 37px;
+  background: url("../img/icon-feature-gift_colored.svg") no-repeat;
+}
+}
+
+@media screen and (min-width: $tablet-width)
+{
+
+  .advantages {
+   padding-right: 50px;
+   padding-top: 45px;
+   padding-bottom: 55px;
+}
+
+.advantages {
+   width: 768px;
+   padding-right: 50px;
+   padding-top: 45px;
+   padding-bottom: 55px;
+}
+  .advantages__title
+  {
+    width: 500px;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #000;
+    margin-top: 65px;
+    margin-bottom: 52px;
+  }
+
+  .advantages__list
+  {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item
+  {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 65px;
+  }
+
+  .advantages__description
+  {
+    width: 334px;
+  }
+}
+
+@media screen and (min-width: $desktop-width)
+{
+
+  .advantages {
+    padding-top: 56px;
+    padding-bottom: 62px;
+    margin-left: 180px;
+    margin-top: -150px;
+  }
+
+  .advantages__title
+  {
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 57px;
+    color: #000;
+    position: relative;
+    left: -35px;
+  }
+
+  .advantages__list
+  {
+    position: relative;
+    left: -30px;
+    margin-top: -30px;
+  }
+}
+>>>>>>> module4-task1

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .site-button
 {
 font-size: 17px;
@@ -13,3 +14,33 @@ padding-left: 85px;
 padding-right: 85px;
 margin-top: 20px;
 }
+||||||| merged common ancestors
+=======
+.site-button
+{
+font-size: 17px;
+color: #464646;
+line-height: 20px;
+font-weight: 700;
+text-transform: uppercase;
+border: 2px solid #464646;
+background-color: #fff;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 85px;
+padding-right: 85px;
+margin-top: 20px;
+}
+
+.site-button:hover
+{
+  background-color: #444444;
+  color: #fff;
+}
+
+.site-button:active
+{
+  background-color: #444444;
+  color: #8d8d8d;
+}
+>>>>>>> module4-task1
