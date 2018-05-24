@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="page-header page-header--index">
+  <div class="page-header__logo-container">
+    <picture>
+    <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+    </picture>
+    <button class="page-header__button" type="button"> Открыть меню </button>
+  </div>
+  <ul class="site-list site-list--index">
+    <li class="site-list__item">
+      <div class="site-list__container">
+        <a href="catalog.html" class="site-list__link">
+          Каталог товаров
+        </a>
+      </div>
+    </li>
+    <li class="site-list__item">
+      <div class="site-list__container">
+        <a href="form.html" class="site-list__link">
+          Вязание на заказ
+        </a>
+      </div>
+    </li>
+    <li class="site-list__item site-list__item--new">
+      <div class="site-list__container">
+      <a href="#" class="site-list__link">
+          Новые поступления
+      </a>
+      </div>
+    </li>
+    <li class="site-list__item site-list__item--sale">
+      <div class="site-list__container">
+      <a href="#" class="site-list__link">
+          Распродажа
+      </a>
+      </div>
+    </li>
+    <li class="site-list__item site-list__item--delivery">
+      <div class="site-list__container">
+        <span>
+          Бесплатная доставка по России
+        </span>
+      </div>
+    </li>
+  </ul>
+  <ul class="user-list user-list--index">
+    <li class="user-list__item">
+      <div class="user-list__container">
+      <a href="#" class="user-list__link user-list__link--search">
+        <svg class="user-list__search-icon" width="17.6" height="17.6"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+        <span> Поиск по сайту </span>
+      </a>
+      </div>
+    </li>
+    <li class="user-list__item">
+      <div class="user-list__container">
+      <a href="#" class="user-list__link user-list__link--cart">
+        <svg class="user-list__cart-icon" width="20.294px" height="18.849px"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+        Корзина: пока пуста
+      </a>
+      </div>
+    </li>
+    <li class="user-list__item user-list__item--delivery">
+      <div class="user-list__container">
+            <span class="delivery-text">
+              Бесплатная доставка по России
+            </span>
+      </div>
+    </li>
+  </ul>
+</header>
+
+
+    <main class="catalog-main">
+
+      <h1 class="catalog-main__title">Каталог товаров</h1>
+
+      <section class="catalog">
+        <div class="catalog-item">
+          <div class="catalog-item__image">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.svg">
+            <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="laundry_basket">
+           </picture>
+          </div>
+          <h4 class="catalog-item__title">Зайчик попрыгайчик</h4>
+          <div class="catalog-item__description">Рост 30 см, вес 200 г</div>
+          <div class="catalog-item__price">1 200 руб.<span class="menu-element__icon-basket"></span></div>
+        </div>
+        <div class="catalog-item">
+          <div class="catalog-item__image">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.svg">
+            <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="laundry_basket">
+           </picture>
+          </div>
+          <h4 class="catalog-item__title">Корзинка для белья</h4>
+          <div class="catalog-item__description">Диаметр 15 см, высота 10 см</div>
+          <div class="catalog-item__price">690 руб.<span class="menu-element__icon-basket"></span></div>
+        </div>
+        <div class="catalog-item">
+          <div class="catalog-item__image">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.svg">
+            <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="laundry_basket">
+            </picture>
+           </div>
+          <h4 class="catalog-item__title">Большая корзинка для игрушек</h4>
+          <div class="catalog-item__description catalog-item__description--basket">Диаметр 30 см, высота 30 см</div>
+          <div class="catalog-item__price">1 500 руб.<span class="menu-element__icon-basket"></span></div>
+        </div>
+      </section>
+
+      <section class="production">
+
+          <h4 class="production__title"><span class="production-element__img-video"></span>Процесс производства</h4>
+          <p class="production__video">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.svg">
+            <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="video">
+            </picture>
+            <a href="#"></a>
+          </p>
+          <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="production__button site-button">Сделать заказ</button>
+
+      </section>
+
+    </main>
+
+  <footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <img class="page-footer__logo" src="img/logo-mobile.svg" alt="Логотоп Мишка">
+    <ul class="page-footer__social-list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.instagram.com">
+          <img class="social-list__image social-list__image--instagram" src="img/icon-insta.svg" alt="Инстаграм">
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.facebook.com">
+          <img class="social-list__image social-list__image--facebook" src="img/icon-fb.svg" alt="Фейсбук">
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://twitter.com/">
+          <img class="social-list__image social-list__image--twitter" src="img/icon-twitter.svg" alt="Твиттер">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__developer">
+      <p class="page-footer__develope">
+        Разработано
+      </p>
+      <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/logo-htmlacademy.svg" alt="HTML-academy">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  </html>
