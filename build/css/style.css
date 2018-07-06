@@ -364,6 +364,7 @@ template {
 
 @media (min-width: 1250px) {
   .page-header {
+    height: 90px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -386,7 +387,8 @@ template {
     .page-header .page-header__logo-image {
       margin: 0;
       padding-top: 8px;
-      width: 150px; } }
+      width: 170px;
+      height: 75px; } }
 
 .site-list,
 .user-list {
@@ -433,21 +435,26 @@ template {
   margin: 0 auto;
   padding-left: 45px; }
 
-.site-list__link:hover,
-.user-list__link:hover {
-  color: #7a7a7a; }
-  .site-list__link:hover svg,
-  .user-list__link:hover svg {
-    opacity: 1;
-    fill: #63d1bb; }
-
-.site-list__link:active,
-.user-list__link:active {
-  color: #b2b2b2; }
-  .site-list__link:active svg,
-  .user-list__link:active svg {
-    opacity: 1;
-    fill: #d0f1ea; }
+.site-list__link,
+.user-list__link {
+  color: #000;
+  border: none;
+  text-decoration: none;
+  font-weight: bold; }
+  .site-list__link:hover,
+  .user-list__link:hover {
+    color: #7a7a7a; }
+    .site-list__link:hover svg,
+    .user-list__link:hover svg {
+      opacity: 1;
+      fill: #63d1bb; }
+  .site-list__link:active,
+  .user-list__link:active {
+    color: #b2b2b2; }
+    .site-list__link:active svg,
+    .user-list__link:active svg {
+      opacity: 1;
+      fill: #d0f1ea; }
 
 .page-header__logo-link:hover {
   opacity: 0.6; }
@@ -1806,7 +1813,7 @@ template {
   padding: 0px; }
 
 .catalog-main__title {
-  width: 100%;
+  width: 1200px;
   margin: 0;
   margin-top: 75px;
   margin-bottom: 72px;
@@ -1819,7 +1826,10 @@ template {
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 42px;
-  padding-right: 42px; }
+  padding-right: 42px;
+  height: 60px;
+  bottom: 75px;
+  position: relative; }
 
 @media screen and (min-width: 768px) {
   .catalog-main {
