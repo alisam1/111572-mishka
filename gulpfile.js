@@ -40,7 +40,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html").on("change", ["html"]);
+  gulp.watch("source/*.html").on("change", () => ["html"]);
 });
 
 gulp.task("sprite", function () {

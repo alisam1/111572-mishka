@@ -1924,7 +1924,7 @@ template {
     margin-right: 70px; }
     .catalog-item__price::after {
       content: "";
-      position: absolute;
+      position: relative;
       top: 0px;
       left: 680px;
       width: 40px;
