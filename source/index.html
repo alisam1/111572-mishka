@@ -8,14 +8,17 @@
   <body>
 
     <header class="page-header page-header--index">
-      <div class="page-header__logo-container">
+  <div class="page-header__logo-container">
       <picture>
-      <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="170" height="75" alt="Мишка">
+      <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-      </picture>
-    <button class="page-header__button" type="button"> Открыть меню </button>
+    </picture>
+    <span id="navbar-toggle">
+          <button class="page-header__button" type="button"> Открыть меню </button>
+    </span>
   </div>
+  <nav id="main-nav">
   <ul class="site-list site-list--index">
     <li class="site-list__item">
       <div class="site-list__container">
@@ -78,6 +81,7 @@
       </div>
     </li>
   </ul>
+  </nav>
   </header>
 
 
@@ -249,5 +253,23 @@
     </div>
   </footer>
 
+
+  <script>
+  let mainNav=document.getElementById('main-nav');
+  let navbarToggle=document.getElementById('navbar-toggle');
+
+  navbarToggle.addEventListener('click',function(){
+
+    if(this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else{
+        mainNav.style.display="flex";
+        this.classList.add('active');
+
+  }
+});
+</script>
   </body>
 </html>
