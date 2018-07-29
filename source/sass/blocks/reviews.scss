@@ -1,27 +1,46 @@
 .reviews
 {
-  margin-top: 70px;
-  margin-bottom: 40px;
-  margin-left: 30px;
-
-  &::after
-  {
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 195px;
+  &::after{
     content: "";
-    display: block;
-    height: 70px;
-    background-image: url('/img/zigzag-line-desktop.jpg');
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position-x: 50%;
+    background-size: 320px 7px;
   }
+}
+
+.reviews__wrapper {
+  width: 260px;
+  margin: 0 auto 48px;
+  padding: 0 30px;
 }
 
 .reviews__title
 {
+  width: 105px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   color: #000;
+  margin-top: 35px;
 }
+
+.reviews__slider
+{
+  width: 260px;
+}
+
 
 .reviews__item
 {
@@ -34,6 +53,13 @@
   font-size: 15px;
   line-height: 30px;
   color: #464646;
+  position: relative;
+  top:3px;
+}
+
+.reviews__author
+{
+  margin-top: 30px;
 }
 
 .reviews__author-name
@@ -55,10 +81,11 @@
 
 .reviews__arrow
 {
-  width: 270px;
+  width: 260px;
   padding-top: 12px;
   padding-bottom: 12px;
   border: 1px solid #ececec;
+  margin-top: 30px;
 }
 
 .reviews__prev
@@ -72,14 +99,19 @@
 {
   border: none;
   background: transparent;
-  margin-left: 80px;
+  margin-left: 60px;
+}
+
+.reviews__write
+{
+  width: 260px;
 }
 
 @media screen and (min-width: $tablet-width)
 {
   .reviews
   {
-    min-width: 768px;
+    width: $tablet-width;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
@@ -88,29 +120,59 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
+    margin-top: 80px;
+    margin-left: 110px;
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 75px;
+      left: 0;
+
+      width: 768px;
+      height: 15px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position-x: 50%;
+      background-size: 678px 15px;
+    }
   }
 
+  .reviews-wrapper
+  {
+    width: 768px;
+    margin: 0 auto;
+  }
   .reviews__title
   {
-    font-size: 50px;
-    line-height: 43px;
+    font-size: 43px;
+    line-height: 50px;
     font-weight: 700;
     color: #000;
+    margin-top: 50px;
+    margin-left: -8px;
   }
 
   .reviews__text
   {
+    width: 650px;
     font-size: 17px;
     line-height: 30px;
     color: #464646;
     margin-bottom: 70px;
+    position: relative;
+    top: 10px;
+    right: 2px;
   }
 
   .reviews__write
   {
     position: relative;
-    top: -340px;
+    width: 180px;
+    top: -365px;
     margin-left: 490px;
+    padding-left: 20px;
+    padding-right: 12px;
   }
 
   .reviews__author
@@ -133,14 +195,18 @@
 
   .reviews__arrow
   {
-    float: right;
     margin-top: -40px;
+    border: none;
+    margin-left: 450px;
   }
 
   .reviews__prev
   {
     border: none;
     background: transparent;
+    position: relative;
+    left: 20px;
+    top: 3px;
   }
 
   .reviews__prev:hover
@@ -153,6 +219,9 @@
   {
     border: none;
     background: transparent;
+    position: relative;
+    right: 22px;
+    top: 2px;
   }
 }
 
@@ -162,15 +231,22 @@
   {
     width: 1050px;
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 85px;
+    margin-left: 55px;
     &::after
     {
       content: "";
-      display: block;
-      height: 70px;
-      background-image: url('/img/zigzag-line-desktop.jpg');
-      background-repeat: no-repeat;
-      background-position: center bottom;
+      position: absolute;
+      bottom: 70px;
+      left: 0;
+
+      width: 100%;
+      height: 23px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position-x: 50%;
+      background-size: 1050px 23px;
     }
   }
 
@@ -180,25 +256,33 @@
     line-height: 57px;
     font-weight: 700;
     color: #000;
-    padding-left: 65px;
+    position: relative;
+    right: 10px;
+    bottom: 7px;
   }
 
   .reviews__text
   {
-    width: 765px;
+    width: 777px;
     padding-left: 65px;
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    position: relative;
+    top: -5px;
+    right: 15px;
+    margin-left: -65px;
   }
 
   .reviews__author
   {
-    padding-left: 65px;
+    position: relative;
+    right: 15px;
+    bottom: 5px;
   }
 
   .reviews__arrow
   {
     position: relative;
-    left: -110px;
+    left:200px;
   }
 
   .reviews__write
@@ -208,7 +292,7 @@
     padding-left: 43px;
     padding-right: 40px;
     position: relative;
-    left: 270px;
-    margin-top: 50px;
+    left: 195px;
+    margin-top: 65px;
   }
 }

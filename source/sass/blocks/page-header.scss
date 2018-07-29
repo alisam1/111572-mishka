@@ -31,12 +31,12 @@
   top: 29px;
   width: 21px;
   height: 21px;
-  background: #ffffff url("../img/icon-menu-close.svg") no-repeat center;
+  background: #ffffff url("../img/icon-menu-open.svg") no-repeat center;
   border: none;
   font-size: 0;
 
   &--closed {
-    background: #ffffff url("../img/icon-menu-open.svg") no-repeat center;
+    background: #ffffff url("../img/icon-menu-close.svg") no-repeat center;
     //width: 20px;
     //height: 14px;
   }
@@ -60,7 +60,9 @@
 @media (min-width: 768px) {
   #main-nav
   {
-    display: block;
+    display: flex;
+    position: relative;
+    right: 115px
   }
   .page-header__button {
     display: none;
@@ -72,7 +74,6 @@
     display: flex;
     //flex-direction: column;
     align-items: flex-start;
-    flex-wrap: wrap;
   }
 
   .page-header__logo-container {
@@ -89,7 +90,7 @@
 @media (min-width: 1250px) {
   .page-header {
     justify-content: space-between;
-    width: 1050px;
+    min-width: $desktop-width;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -97,18 +98,24 @@
 
     .page-header__logo-container {
       order: 2;
-      width: 160px;
+      width: 170px;
       margin: 0;
+      position: relative;
+      right: 510px;
+      z-index: 999;
     }
 
     .page-header__logo-image {
       margin: 0;
       padding-top: 8px;
-      width: 150px;
+      width: 170px;
+      height: 80px;
     }
   }
-  .main-nav
+  #main-nav
   {
+    width: 1250px;
+    flex-direction: row;
     display: flex;
   }
 }
@@ -314,7 +321,8 @@
     //margin-left: auto;
     //margin-top: -162px;
     order: 2;
-    margin-left: 30px;
+    position: relative;
+    left: 205px;
   }
 
   .user-list__item {
@@ -349,6 +357,7 @@
   .user-list__item .delivery-text {
     font-weight: 400;
     font-size: 15px;
+    display: none;
   }
 
   .user-list__cart-icon {
@@ -370,6 +379,10 @@
     //position: absolute;
     position: relative;
   }
+
+  .site-list__item--delivery {
+    display: none;
+  }
 }
 
 @media (min-width: 1250px) {
@@ -379,6 +392,7 @@
     width: 430px;
     flex-wrap: wrap;
     order: 1;
+    margin-left: 170px;
 
     .site-list__item {
       width: 185px;
@@ -417,7 +431,6 @@
     flex-wrap: wrap;
     order: 3;
     z-index: 90;
-    margin-left: 30px;
   }
 
   .user-list__item {

@@ -1,13 +1,15 @@
 .page-footer {
   font-family: "Open Sans", "Arial", sans-serif;
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: -70px;
   background-color: #e7e7e7;
   display: flex;
 }
 
 .page-footer__wrapper {
   background-color: #e7e7e7;
-  width: 320px;
+  width: $mobile-width;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -60,6 +62,11 @@
 }
 
 @media (min-width: 768px) {
+
+  .page-footer
+  {
+    width: $tablet-width;
+  }
   .page-footer__wrapper {
     width: 668px;
     flex-direction: row;
@@ -95,6 +102,11 @@
 }
 
 @media (min-width: 1150px) {
+
+  .page-footer
+  {
+    width: $desktop-width;
+  }
   .page-footer__wrapper {
     width: 1050px;
   }

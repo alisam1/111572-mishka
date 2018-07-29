@@ -1,0 +1,99 @@
+.knitted-baskets {
+  position: relative;
+
+  display: flex;
+  flex-basis: $mobile-width;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    min-height: 404px;
+    margin: 0;
+    padding-right: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+    padding: 0 55px 0 174px;
+  }
+}
+
+.knitted-baskets__description {
+  padding: 4px 0;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #464646;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0 0 7px;
+    padding: 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 40px 0;
+    padding: 0 15px 0 0;
+  }
+}
+
+.knitted-baskets__list {
+  margin-bottom: 28px;
+
+  border-collapse: collapse;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #464646;
+  margin-left: 10px;
+  position: relative;
+  bottom: 5px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+    margin: 30px 0 50px;
+    position: relative;
+    left: 55px;
+    top: 0px;
+}
+
+  @media (min-width: $desktop-width) {
+    margin-left: 160px;
+    margin-top: -90px;
+  }
+}
+
+.knitted-baskets__list tr {
+  border-bottom: 1px solid $grey-border;
+}
+
+.knitted-baskets__field {
+  padding: 9px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 0 12px 15px;
+  }
+}
+
+.knitted-baskets__value {
+  padding: 0 0 0 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 5px 15px;
+  }
+}
