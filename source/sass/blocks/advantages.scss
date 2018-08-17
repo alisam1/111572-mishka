@@ -14,7 +14,7 @@
   margin-top: 40px;
   margin-bottom: 35px;
   position: relative;
-  top: 13px;
+  top: 35px;
 }
 
 .advantages__list
@@ -63,7 +63,6 @@
 {
   width: 175px;
   position: relative;
-  bottom: 20px;
   left: 10px;
 }
 &--price::before
@@ -80,7 +79,7 @@
 {
   width: 200px;
   position: relative;
-  bottom: 55px;
+  bottom: 35px;
   left: 10px;
 }
 
@@ -99,7 +98,7 @@
   width: 180px;
   position: relative;
   left: 10px;
-  top: -90px;
+  top: -72px;
 }
 &--loves::before
 {
@@ -115,7 +114,7 @@
 {
   width: 210px;
   position: relative;
-  top: -127px;
+  top: -107px;
   left: 10px;
 }
 &--support::before
@@ -131,7 +130,7 @@
 &--support
 {
   position: relative;
-  top: -165px;
+  top: -145px;
   left: 10px;
 }
 
@@ -148,7 +147,7 @@
 {
   width: 200px;
   position: relative;
-  top: -200px;
+  top: -180px;
   left: 10px;
 }
 }
@@ -319,10 +318,121 @@
     color: #000;
     position: relative;
     left: -5px;
+    top:5px;
   }
 
   .advantages__list
   {
     position: relative;
+  }
+
+  .advantages__item
+  {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 65px;
+    &--material::before
+    {
+      content: "";
+      position: absolute;
+      margin-top: -12px;
+      width: 32px;
+      height: 37px;
+      background: url("../img/icon-feature-flower_colored.svg") no-repeat;
+      left: 5px;
+    }
+    &--material
+    {
+      width: 230px;
+      position: relative;
+      bottom: 50px;
+      left: 5px;
+    }
+    &--price::before
+    {
+      content: "";
+      position: absolute;
+      margin-top: -15px;
+      margin-left: 0px;
+      width: 48px;
+      height: 37px;
+      background: url("../img/icon-feature-money_colored.svg") no-repeat;
+    }
+    &--price
+    {
+      width: 240px;
+      position: relative;
+      bottom: 65px;
+      left: 5px;
+    }
+
+    &--photos::before
+    {
+      content: "";
+      position: absolute;
+      margin-top: -6px;
+      margin-left: 8px;
+      width: 34px;
+      height: 37px;
+      background: url("../img/icon-feature-heart_colored.svg") no-repeat;
+    }
+    &--photos
+    {
+      width: 240px;
+      position: relative;
+      top: -95px;
+      left: 5px;
+    }
+    &--loves::before
+    {
+      content: "";
+      position: absolute;
+      margin-top: -8px;
+      width: 38px;
+      height: 37px;
+      background: url("../img/icon-feature-ball_colored.svg") no-repeat;
+      fill: #63d1bb;
+      right: 200px;
+    }
+    &--loves
+    {
+      position: relative;
+      top: -50px;
+      left: 25px;
+    }
+    &--support::before
+    {
+      content: "";
+      position: absolute;
+      margin-top: -5px;
+      width: 55px;
+      height: 37px;
+      background: url("../img/icon-feature-rocket_colored.svg") no-repeat;
+    }
+    &--support
+    {
+      width: 295px;
+      position: relative;
+      top: -87px;
+      left: 25px;
+    }
+
+    &--gifts::before
+    {
+      content: "";
+      position: absolute;
+      margin-top: -7px;
+      width: 35px;
+      height: 37px;
+      background: url("../img/icon-feature-gift_colored.svg") no-repeat;
+    }
+    &--gifts
+    {
+      width: 240px;
+      position: relative;
+      left: 25px;
+      top: -105px;
+    }
   }
 }

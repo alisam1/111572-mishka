@@ -9,7 +9,7 @@
 
 .second-nav__wrapper
 {
-  width: $mobile-width;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -31,7 +31,6 @@
 
 .second-nav__list-item
 {
-  width: 320px;
   font-size: 19px;
   line-height: 24px;
   color: #fff;
@@ -90,7 +89,6 @@
      flex-direction: row;
      margin-top: -95px;
      width: 668px;
-     margin-left: -170px;
   }
 
   .second-nav__list-item
@@ -153,7 +151,7 @@
   .second-nav__wrapper
   {
     margin: 0 auto;
-    margin-left: 170px;
+    margin-left: -240px;
   }
 
   .second-nav__list

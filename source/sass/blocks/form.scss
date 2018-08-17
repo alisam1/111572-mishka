@@ -293,11 +293,13 @@ legend
 
   .form__description
   {
-    width: 668px;
+    width: 700px;
     font-size: 17px;
     line-height: 30px;
     color: #444444;
-    margin-left: 165px;
+    margin-left: 160px;
+    position: relative;
+    bottom: 42px;
 }
 
   .radio-wrap
@@ -308,16 +310,22 @@ legend
     left: 165px;
   }
 
+  .radio-wrap .label
+  {
+    width: 310px;
+    font-size: 18px;
+    line-height: 19px;
+  }
+
   .form__legend
   {
      width: 175px;
      position: relative;
-     top: 50px;
+     top: 8px;
      font-size: 17px;
      line-height: 30px;
      font-weight: bold;
      color: #63d1bb;
-     padding-left: 65px;
      &::before {
       display: none;
     }
